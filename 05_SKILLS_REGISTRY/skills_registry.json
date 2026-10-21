@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "count": 20,
+  "note": "Partial — from agent-browser, agentic-*, ai-agents unpack scan before FUSE death. Expand after re-unpack.",
+  "skills": [
+    {"id": "agent-browser", "layer": "ingestion"},
+    {"id": "agent-browser-core", "layer": "ingestion"},
+    {"id": "agent-browser-agentcore", "layer": "ingestion"},
+    {"id": "agent-browser-derive-client", "layer": "ingestion"},
+    {"id": "agent-browser-dogfood", "layer": "ingestion"},
+    {"id": "agent-browser-electron", "layer": "ingestion"},
+    {"id": "agent-browser-protected-vercel", "layer": "ingestion"},
+    {"id": "agent-browser-slack", "layer": "ingestion"},
+    {"id": "agent-browser-vercel-sandbox", "layer": "ingestion"},
+    {"id": "agent-browser-webmcp-gen", "layer": "ingestion"},
+    {"id": "agentic-seo", "layer": "skills"},
+    {"id": "agentic-sql", "layer": "skills"},
+    {"id": "agentic-support", "layer": "skills"},
+    {"id": "23blocks-assets-api", "layer": "orchestration"},
+    {"id": "23blocks-assets-alerts-api", "layer": "orchestration"},
+    {"id": "23blocks-assets-audits-api", "layer": "orchestration"},
+    {"id": "23blocks-assets-categories-api", "layer": "orchestration"},
+    {"id": "23blocks-assets-companies-api", "layer": "orchestration"},
+    {"id": "RTK", "layer": "orchestration", "role": "token_compression"},
+    {"id": "OpenMontage", "layer": "processing", "role": "video_production"}
+  ]
+}
