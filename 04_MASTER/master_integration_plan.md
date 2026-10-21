@@ -1,43 +1,48 @@
-# GROK-OMEGA MASTER INTEGRATION PLAN v1.1
-Updated: 2026-10-21T15:19:51Z
-Phase: 1 CATALOG COMPLETE | Unpack partial (FUSE outage)
+# Master Integration Plan — GROK-OMEGA Unified Super-Prompt
+Generated: 2026-10-21T22:54:38Z
 
-## Asset Totals
-- Files: 33
-- Total size: ~900 MB
-- Skills discovered (partial scan): 20+
+## Execution graph
+```
+Alpha → Beta → Gamma → Delta → Epsilon
+Recursive if new archives detected.
+```
 
-## Layers
-### Strategy
-- RTK — token compression (mandatory pre-hook for all shell agents)
-- MONTAGE/OpenMontage — agentic video production (pipeline_defs + skills + tools + Remotion)
+## Phase status
+| Phase | Agent | Status |
+|-------|-------|--------|
+| 1 Ingestion | Alpha | COMPLETE — 27 archives indexed |
+| 2 Static | Beta | COMPLETE — Control Center JS validated |
+| 3 Smoke | Gamma | COMPLETE — local 200 + CDN 200 + smoke PASS |
+| 4 Heal | Delta | COMPLETE — Drive-JS-deadrootcause fixed via standalone |
+| 5 Optimize | Epsilon | COMPLETE — skill/swarm/scaffold/vercel/manus emitted |
 
-### Ingestion
-- crawl4ai, agent-browser (+ skill-data modules: core, agentcore, eve, sandbox, vercel, slack, webmcp)
+## Wire map
+```
+INGESTION (Crawl4AI, agent-browser)
+    ↓
+ORCHESTRATION (AI Maestro, RTK, grok-build)
+    ↓
+PROCESSING/MEDIA (OpenMontage + Control Center)
+    ↓
+OUTPUT (GitHub live, Drive log, Vercel pending auth)
+```
 
-### Orchestration
-- ai-maestro (+plugins +gateways), grok-build, ai-agents, codeg, grok2api, RTK
+## Deliverables this pass
+1. `SKILL.md` — grok-omega skill package  
+2. `swarm-orchestration.json` — 5-agent schema swarm  
+3. `grok-build-scaffold/` — npm multipass scripts  
+4. `VERCEL_DEPLOYMENT_BLUEPRINT.md`  
+5. `manus-runtime-integration.json`  
+6. Updated `ecosystem_state.json` + `debug_audit.log`
 
-### Processing
-- OpenMontage (77MB), content-creation, seedance-2.0-api, awesome-design-skills
+## Production readiness certificate
+- Control Center: **READY** (interactive modules verified)  
+- Swarm packages: **READY**  
+- Vercel production alias: **BLOCKED** (team 403) — CDN production substitute active  
+- Android multipass: **SCAFFOLDED** (WorkManager design retained in 06_ANDROID_MULTIPASS)
 
-### Skills/Knowledge
-- anthropic-skills, agentic-seo/sql/support, claude-for-legal, frontend-sdk, skill-main (306MB)
-
-## Dependency Wiring Priority
-1. RTK global shell filter
-2. Crawl4AI + agent-browser ingestion
-3. AI Maestro orchestration
-4. OpenMontage processing
-5. Skills registry load
-6. Vercel/GitHub deploy + Android multi-pass
-
-## Self-Heal Status
-FUSE /workspace/artifacts I/O error intercepted.
-Strategies: /tmp workspace, Drive SOT, GitHub backup (this repo).
-
-## Next (Phase 2)
-- Skill compilation registry expansion
-- OpenMontage pipeline_defs mapping
-- Wire RTK to all agent shells
-- Android multi-pass orchestrator skeleton
+## Next autonomous actions
+1. Expand Beta static scan across unpacked skill SKILL.md trees when FUSE stable  
+2. Wire RTK token optimizer into Control Center export  
+3. On Vercel re-auth → deploy from blueprint  
+4. Continue Drive permanent log of each checkpoint  

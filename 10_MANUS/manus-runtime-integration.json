@@ -1,0 +1,41 @@
+{
+  "name": "grok-omega-manus-runtime",
+  "version": "1.0.0",
+  "description": "Manus-compatible runtime hooks for GROK-OMEGA swarm + OpenMontage media layer",
+  "hooks": {
+    "on_boot": [
+      "load_ecosystem_state",
+      "register_agents",
+      "bind_tool_fusion"
+    ],
+    "on_task": [
+      "semantic_route",
+      "agent_dispatch",
+      "checkpoint"
+    ],
+    "on_error": [
+      "delta_tri_hypothesis",
+      "hot_patch",
+      "rollback"
+    ],
+    "on_complete": [
+      "epsilon_certify",
+      "persist_drive",
+      "persist_github"
+    ]
+  },
+  "tools": {
+    "media": "openmontage-control-center",
+    "ingest": "crawl4ai + agent-browser",
+    "orchestrate": "ai-maestro + rtk",
+    "deploy": "github + vercel-when-authorized"
+  },
+  "endpoints": {
+    "decompose": "/v1/grok-decompose",
+    "deep_think": "/v1/grok-deep-think",
+    "verify": "/v1/grok-verify"
+  },
+  "skill_ref": "skills/grok-omega/SKILL.md",
+  "swarm_ref": "swarm/swarm-orchestration.json",
+  "generated_at": "2026-10-21T22:54:38Z"
+}

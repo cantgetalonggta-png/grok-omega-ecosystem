@@ -1,0 +1,14 @@
+// GROK-OMEGA Android multipass — WorkManager chain (scaffold)
+// Pass1 Decompose → Pass2 DeepThink → Pass3 Verify → Pass4 Persist
+// Store intermediate JSON in Room; release memory between passes.
+
+/*
+val pass1 = OneTimeWorkRequestBuilder<DecomposeWorker>().build()
+val pass2 = OneTimeWorkRequestBuilder<DeepThinkWorker>().build()
+val pass3 = OneTimeWorkRequestBuilder<VerifyWorker>().build()
+WorkManager.getInstance(ctx)
+  .beginWith(pass1)
+  .then(pass2)
+  .then(pass3)
+  .enqueue()
+*/

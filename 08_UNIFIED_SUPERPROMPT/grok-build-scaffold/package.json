@@ -1,0 +1,15 @@
+{
+  "name": "grok-omega-build",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GROK-OMEGA Grok Build project scaffold \u2014 multipass swarm + OpenMontage media layer",
+  "scripts": {
+    "alpha": "node scripts/alpha-inventory.js",
+    "beta": "node scripts/beta-static.js",
+    "gamma": "node scripts/gamma-smoke.js",
+    "delta": "node scripts/delta-heal.js",
+    "epsilon": "node scripts/epsilon-optimize.js",
+    "swarm": "npm run alpha && npm run beta && npm run gamma && npm run delta && npm run epsilon",
+    "test": "node ../openmontage-app/test-smoke.js || node test-smoke.js"
+  }
+}

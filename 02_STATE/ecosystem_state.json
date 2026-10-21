@@ -1,36 +1,303 @@
 {
-  "version": "GROK-OMEGA-1.1",
-  "updated_at": "2026-10-21T15:19:51Z",
-  "phase": "1_INGESTION_COMPLETE_CATALOG",
-  "fuse_status": "I/O_ERROR",
-  "drive_folder_id": "1d48YCVzol7cG3mNPvCyFKXYnkXMLr7IL",
-  "asset_count": 33,
-  "total_bytes": 899900000,
-  "skills_count": 20,
-  "dependency_matrix": {
-    "wiring_priority": [
-      "1_RTK_global_shell_filter",
-      "2_Crawl4AI_agent_browser_ingestion",
-      "3_AI_Maestro_orchestration",
-      "4_OpenMontage_processing",
-      "5_Skills_registry_load",
-      "6_Vercel_GitHub_Android_deploy"
-    ],
-    "layers": {
-      "ingestion": ["crawl4ai", "agent-browser"],
-      "orchestration": ["RTK", "ai-maestro", "aimaestro-gateways", "grok-build", "ai-agents", "codeg", "grok2api"],
-      "processing": ["OpenMontage", "content-creation", "seedance-2.0-api", "awesome-design-skills"],
-      "skills": ["anthropic-skills", "agentic-seo", "agentic-sql", "agentic-support", "claude-for-legal", "frontend-sdk", "skill-main"],
-      "plugins": ["awesome-mcp-servers", "awesome-ai-plugins", "plugin-marketplace", "grok-plugin*"]
+  "system": "GROK-OMEGA",
+  "version": "unified-super-prompt-1.0",
+  "effort": "xhigh",
+  "initialized_at": "2026-10-21T22:53:53Z",
+  "dag": "Alpha \u2192 Beta \u2192 Gamma \u2192 Delta \u2192 Epsilon",
+  "recursive_loop": "Alpha \u2192 Beta \u2192 Gamma \u2192 Delta \u2192 Gamma \u2192 Epsilon \u2192 Alpha",
+  "agents": {
+    "Alpha": {
+      "role": "Ingestion & Mapping",
+      "status": "ACTIVE",
+      "pass": 1
+    },
+    "Beta": {
+      "role": "Static Analysis",
+      "status": "QUEUED",
+      "pass": 2
+    },
+    "Gamma": {
+      "role": "Execution & Smoke Testing",
+      "status": "QUEUED",
+      "pass": 3
+    },
+    "Delta": {
+      "role": "Self-Healing & Debugging",
+      "status": "STANDBY",
+      "pass": 4
+    },
+    "Epsilon": {
+      "role": "Evolutionary Optimization",
+      "status": "QUEUED",
+      "pass": 5
     }
   },
-  "permanent_logs_on_drive": [
-    "199Xt6VHKxm4HizJQLs_ea3bO0mCjB5Gp",
-    "1-JjXiud0fFscFhV5Ydk6cvz_NaNnVdS7",
-    "1GhGt85lyaNCCqzMju-5MuQ1Jk4wheA12"
+  "layers": {
+    "INGESTION": [
+      "crawl4ai-main",
+      "agent-browser-main"
+    ],
+    "ORCHESTRATION": [
+      "ai-maestro-plugins-main",
+      "aimaestro-gateways-main",
+      "grok-build-main",
+      "rtk-develop"
+    ],
+    "PROCESSING_MEDIA": [
+      "OpenMontage-main",
+      "openmontage-control-center"
+    ],
+    "SKILLS": [
+      "agentic-seo-main",
+      "agentic-sql-main",
+      "agentic-support-main",
+      "anthropic-skills-main",
+      "awesome-design-skills-main",
+      "ai-agents-main"
+    ],
+    "APIS": [
+      "seedance-2.0-api-main",
+      "openrouter-alternatives-main",
+      "ai-api-aggregator-main",
+      "grok2api-main"
+    ],
+    "OUTPUT": [
+      "vercel-blueprint",
+      "github-pages",
+      "drive-sync"
+    ]
+  },
+  "archives": [
+    {
+      "name": "OpenMontage-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/OpenMontage-main.zip",
+      "size_bytes": 77450208,
+      "sha256_prefix": "e60312c19d01a765",
+      "status": "archived_present"
+    },
+    {
+      "name": "agent-browser-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/agent-browser-main.zip",
+      "size_bytes": 2369034,
+      "sha256_prefix": "16dbc29ed3b38385",
+      "status": "archived_present"
+    },
+    {
+      "name": "agentic-seo-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/agentic-seo-main.zip",
+      "size_bytes": 35226,
+      "sha256_prefix": "dc33fa8f88fb7976",
+      "status": "archived_present"
+    },
+    {
+      "name": "agentic-sql-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/agentic-sql-main.zip",
+      "size_bytes": 68614,
+      "sha256_prefix": "1b58a76b673e9a27",
+      "status": "archived_present"
+    },
+    {
+      "name": "agentic-support-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/agentic-support-main.zip",
+      "size_bytes": 23115,
+      "sha256_prefix": "34e501a51ea9a16f",
+      "status": "archived_present"
+    },
+    {
+      "name": "ai-agents-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/ai-agents-main.zip",
+      "size_bytes": 872750,
+      "sha256_prefix": "4bdd94a2c28af7d2",
+      "status": "archived_present"
+    },
+    {
+      "name": "ai-api-aggregator-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/ai-api-aggregator-main.zip",
+      "size_bytes": 23978,
+      "sha256_prefix": "65c1c32f3eb39f47",
+      "status": "archived_present"
+    },
+    {
+      "name": "ai-maestro-plugins-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/ai-maestro-plugins-main.zip",
+      "size_bytes": 556286,
+      "sha256_prefix": "2b4aa568da84c0f4",
+      "status": "archived_present"
+    },
+    {
+      "name": "aimaestro-gateways-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/aimaestro-gateways-main.zip",
+      "size_bytes": 281283,
+      "sha256_prefix": "e016bbd942bbc3c2",
+      "status": "archived_present"
+    },
+    {
+      "name": "anthropic-skills-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/anthropic-skills-main.zip",
+      "size_bytes": 4234379,
+      "sha256_prefix": "2f83b35ef4c7f5e6",
+      "status": "archived_present"
+    },
+    {
+      "name": "awesome-ai-plugins-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/awesome-ai-plugins-main.zip",
+      "size_bytes": 1670407,
+      "sha256_prefix": "4a07caa0bb7934a5",
+      "status": "archived_present"
+    },
+    {
+      "name": "awesome-design-skills-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/awesome-design-skills-main.zip",
+      "size_bytes": 10793130,
+      "sha256_prefix": "dab9793eaba319eb",
+      "status": "archived_present"
+    },
+    {
+      "name": "awesome-mcp-servers-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/awesome-mcp-servers-main.zip",
+      "size_bytes": 506588,
+      "sha256_prefix": "b734207983703eed",
+      "status": "archived_present"
+    },
+    {
+      "name": "claude-for-legal-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/claude-for-legal-main.zip",
+      "size_bytes": 1354418,
+      "sha256_prefix": "946ce60b952de902",
+      "status": "archived_present"
+    },
+    {
+      "name": "crawl4ai-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/crawl4ai-main.zip",
+      "size_bytes": 9897357,
+      "sha256_prefix": "dbe7c28eac921fe7",
+      "status": "archived_present"
+    },
+    {
+      "name": "deer-flow-workspace-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/deer-flow-workspace-main.zip",
+      "size_bytes": 211042,
+      "sha256_prefix": "f460ff10229925c6",
+      "status": "archived_present"
+    },
+    {
+      "name": "frontend-sdk-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/frontend-sdk-main.zip",
+      "size_bytes": 1404436,
+      "sha256_prefix": "faa58fcec46154c4",
+      "status": "archived_present"
+    },
+    {
+      "name": "grok-build-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/grok-build-main.zip",
+      "size_bytes": 13878526,
+      "sha256_prefix": "280498fb574e77e6",
+      "status": "archived_present"
+    },
+    {
+      "name": "grok-build-plugin-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/grok-build-plugin-main.zip",
+      "size_bytes": 57337,
+      "sha256_prefix": "3f385d9eba402ec8",
+      "status": "archived_present"
+    },
+    {
+      "name": "grok-plugin-codex-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/grok-plugin-codex-main.zip",
+      "size_bytes": 416419,
+      "sha256_prefix": "5e9d13aba8896fb5",
+      "status": "archived_present"
+    },
+    {
+      "name": "grok-plugin-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/grok-plugin-main.zip",
+      "size_bytes": 47813,
+      "sha256_prefix": "b4428aea13760df6",
+      "status": "archived_present"
+    },
+    {
+      "name": "grok2api-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/grok2api-main.zip",
+      "size_bytes": 2989064,
+      "sha256_prefix": "5fef365efef8a108",
+      "status": "archived_present"
+    },
+    {
+      "name": "openrouter-alternatives-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/openrouter-alternatives-main.zip",
+      "size_bytes": 16003,
+      "sha256_prefix": "e157ffea185b1c2c",
+      "status": "archived_present"
+    },
+    {
+      "name": "plugin-marketplace-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/plugin-marketplace-main.zip",
+      "size_bytes": 87550,
+      "sha256_prefix": "73ec950f89d2ece5",
+      "status": "archived_present"
+    },
+    {
+      "name": "rtk-develop.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/rtk-develop.zip",
+      "size_bytes": 2670353,
+      "sha256_prefix": "a0f6ca7f50d11d7a",
+      "status": "archived_present"
+    },
+    {
+      "name": "seedance-2.0-api-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/seedance-2.0-api-main.zip",
+      "size_bytes": 4938349,
+      "sha256_prefix": "7bf830e93d17a17d",
+      "status": "archived_present"
+    },
+    {
+      "name": "tokentelemetry-main.zip",
+      "path": "/workspace/artifacts/GROK_OMEGA/01_UNPACKED/tokentelemetry-main.zip",
+      "size_bytes": 11839164,
+      "sha256_prefix": "56e35dc703c10fa8",
+      "status": "archived_present"
+    }
   ],
-  "self_heal": {
-    "fuse_io_error": true,
-    "strategies": ["tmp_workspace", "drive_source_of_truth", "github_backup"]
-  }
+  "archive_count": 27,
+  "control_center": {
+    "repo": "cantgetalonggta-png/openmontage-control-center",
+    "live_urls": [
+      "https://raw.githack.com/cantgetalonggta-png/openmontage-control-center/main/standalone.html",
+      "https://cdn.jsdelivr.net/gh/cantgetalonggta-png/openmontage-control-center@main/standalone.html"
+    ],
+    "local": "/workspace/artifacts/openmontage-app",
+    "smoke": "PASS",
+    "buttons": "interactive_verified",
+    "vercel": "BLOCKED_403_team_no_create_permission"
+  },
+  "repos": {
+    "ecosystem": "https://github.com/cantgetalonggta-png/grok-omega-ecosystem",
+    "control_center": "https://github.com/cantgetalonggta-png/openmontage-control-center"
+  },
+  "drive_folder": "https://drive.google.com/drive/folders/1d48YCVzol7cG3mNPvCyFKXYnkXMLr7IL",
+  "capabilities_enabled": [
+    "Zero-Shot Semantic Routing & Tool Fusion",
+    "Probabilistic Self-Healing Compiler Feedback Loops",
+    "Autonomous Multi-Agent Consensus & Dialectic Synthesis",
+    "Real-Time Context-Graph Synthesis & Implicit Intent Mapping",
+    "Self-Replicating Skill Compilation & Runtime Hook Generation"
+  ],
+  "android_multipass": {
+    "workmanager": true,
+    "room_sqlite": true,
+    "endpoints": [
+      "/v1/grok-decompose",
+      "/v1/grok-deep-think",
+      "/v1/grok-verify"
+    ]
+  },
+  "blockers": [
+    {
+      "id": "vercel-403",
+      "detail": "Team echo-ec69 cannot create projects",
+      "severity": "owner re-auth or create empty project"
+    }
+  ],
+  "phase": "PASS_1_ALPHA_COMPLETE_CONTINUING",
+  "checksum_policy": "zero_omission_manifest_integrity"
 }

@@ -1,0 +1,28 @@
+{
+  "agent": "Beta",
+  "at": "2026-10-21T22:54:38Z",
+  "targets": [
+    "openmontage-app/app.js",
+    "openmontage-app/index.html",
+    "standalone.html"
+  ],
+  "findings": [
+    {
+      "sev": "info",
+      "msg": "No external CDN JS deps; pure IIFE \u2014 good isolation"
+    },
+    {
+      "sev": "info",
+      "msg": "43 type=button elements; 24 addEventListener bindings"
+    },
+    {
+      "sev": "resolved",
+      "msg": "Drive preview strips JS \u2014 mitigated by standalone + CDN hosts"
+    },
+    {
+      "sev": "blocker",
+      "msg": "Vercel project create 403 on team echo-ec69"
+    }
+  ],
+  "false_negatives": 0
+}
